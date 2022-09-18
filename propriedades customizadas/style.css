@@ -1,0 +1,45 @@
+/* :root {
+  --tamanho-titulo: 3rem;
+  --cor-primaria: #84e;
+}
+
+h1 {
+  font-size: var(--tamanho-titulo);
+  color: var(--cor-primaria);
+}
+
+p {
+  --cor-primaria: #222;
+  font-size: calc(var(--tamanho-titulo) / 2);
+  color: var(--cor-primaria);
+} */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo: #222;
+    --texto-1: #eee;
+    --texto-2: #bbb;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --fundo: #fff;
+    --texto-1: #111;
+    --texto-2: #444;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  background: var(--fundo);
+}
+
+h1 {
+  color: var(--texto-1);
+}
+
+p {
+  color: var(--texto-2);
+}
